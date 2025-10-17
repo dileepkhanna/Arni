@@ -29,7 +29,6 @@ p {
 .main-container {
     max-width: 1920px;
     margin: 0 auto;
-    padding-top: 120px;
     background-color: #F0E9E0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
@@ -217,6 +216,7 @@ section {
     margin: 0 auto;
     flex-wrap: wrap;
     padding-top: 0px;
+    padding-top: 120px;
 }
 
 
@@ -571,7 +571,7 @@ section {
 .storytelling-section {
     background-color: #000;
     color: #fffafa;
-    min-height: 500px;
+    min-height: 400px;
     text-align: center;
     /* ✅ center-align content */
     padding: 60px 20px;
@@ -584,7 +584,7 @@ section {
 
 .storytelling-section img {
     width: 100%;
-    max-width: 577px;
+    max-width: 500px;
     height: auto;
     object-position: bottom;
     object-fit: contain;
