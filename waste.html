@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgundy Dine</title>
+    <style>
+         :root {
+            --burgundy: #800020;
+            --deep-black: #1C1C1C;
+            --champagne-gold: #D4AF37;
+            --walnut-brown: #4E342E;
+            --soft-cream: #F5E6CC;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--deep-black);
+            color: var(--soft-cream);
+        }
+        /* Header */
+        
+        header {
+            background-color: var(--burgundy);
+            color: var(--soft-cream);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        header h1 {
+            font-size: 26px;
+            color: var(--champagne-gold);
+            letter-spacing: 1px;
+            font-weight: 700;
+            margin: 0;
+        }
+        
+        nav a {
+            color: var(--soft-cream);
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--champagne-gold);
+        }
+        /* Hero Section */
+        
+        .hero {
+            background: linear-gradient(rgba(28, 28, 28, 0.6), rgba(28, 28, 28, 0.6)), url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 120px 20px;
+        }
+        
+        .hero h2 {
+            font-size: 42px;
+            color: var(--champagne-gold);
+            margin-bottom: 15px;
+        }
+        
+        .hero p {
+            color: var(--soft-cream);
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        .btn {
+            background-color: var(--champagne-gold);
+            color: var(--deep-black);
+            border: none;
+            padding: 12px 35px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: var(--soft-cream);
+            color: var(--burgundy);
+        }
+        /* Menu Section */
+        
+        .menu {
+            background-color: var(--walnut-brown);
+            padding: 70px 40px;
+            text-align: center;
+        }
+        
+        .menu h3 {
+            color: var(--champagne-gold);
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+        
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .item {
+            background-color: var(--deep-black);
+            border: 1px solid var(--champagne-gold);
+            border-radius: 10px;
+            padding: 25px;
+            width: 250px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+        
+        .item h4 {
+            color: var(--champagne-gold);
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        .item p {
+            color: var(--soft-cream);
+            font-size: 14px;
+        }
+        /* Footer */
+        
+        footer {
+            background-color: var(--burgundy);
+            color: var(--soft-cream);
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Burgundy Dine</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Elegant Dining, Exquisite Taste 🍷</h2>
+        <p>Immerse yourself in a fine dining experience where passion meets perfection. Discover culinary art in every dish.</p>
+        <button class="btn">Reserve Table</button>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <h3>Chef’s Specials</h3>
+        <div class="menu-items">
+            <div class="item">
+                <h4>🥩 Grilled Tenderloin</h4>
+                <p>Juicy steak served with roasted garlic butter and herbs.</p>
+            </div>
+            <div class="item">
+                <h4>🍝 Truffle Pasta</h4>
+                <p>Handmade pasta tossed in creamy truffle sauce and parmesan.</p>
+            </div>
+            <div class="item">
+                <h4>🍮 Caramel Pudding</h4>
+                <p>Rich custard dessert topped with golden caramel glaze.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Burgundy Dine | Crafted with Love & Passion
+    </footer>
+
+</body>
+
+</html>
